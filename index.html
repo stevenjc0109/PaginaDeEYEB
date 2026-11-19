@@ -75,7 +75,7 @@ th{background:var(--ink);color:#fff;font-family:'Archivo',sans-serif}
 
 <section class="s" data-w="0" data-n="01.1" data-t="Resumen"><div class="in">
 <h2>Una calle que se ilumina solo cuando alguien la usa</h2>
-<div class="fl"><div class="cd"><h3>Detecta</h3><p>Sensor ultrasónico HC-SR04 mide el eco</p></div><span class="ar">→</span><div class="cd"><h3>Decide</h3><p>Arduino Nano: ¿distancia ≤ 30 cm?</p></div><span class="ar">→</span><div class="cd"><h3>Conmuta</h3><p>Transistor NPN + resistor limitador</p></div><span class="ar">→</span><div class="cd k"><h3>Ilumina</h3><p>4 farolas LED de la maqueta</p></div></div>
+<div class="fl"><div class="cd"><h3>Detecta</h3><p>Sensor ultrasónico HC-SR04 mide el eco</p></div><span class="ar">→</span><div class="cd"><h3>Decide</h3><p>Arduino Nano: ¿distancia ≤ 10 cm?</p></div><span class="ar">→</span><div class="cd"><h3>Conmuta</h3><p>Transistor NPN + resistor limitador</p></div><span class="ar">→</span><div class="cd k"><h3>Ilumina</h3><p>4 farolas LED de la maqueta</p></div></div>
 <div class="g c4" style="margin-top:clamp(14px,3vh,34px)"><div><div class="big">S/. 49.80</div><div class="lb">costo total estimado</div></div><div><div class="big">&lt;150 <small>ms</small></div><div class="lb">tiempo de respuesta</div></div><div><div class="big">0 <small>V</small></div><div class="lb">con la vía despejada</div></div><div><div class="big">≤30 <small>cm</small></div><div class="lb">umbral de detección</div></div></div>
 </div></section>
 
@@ -128,15 +128,15 @@ th{background:var(--ink);color:#fff;font-family:'Archivo',sans-serif}
 <section class="s" data-w="4" data-n="05.3" data-t="Mediciones"><div class="in">
 <h2>Mediciones en tres casos de prueba</h2>
 <table><tr><th>Caso</th><th>Distancia</th><th>Lógica</th><th>Farolas</th><th>Pin de salida</th></tr>
-<tr><td>1</td><td>d &gt; 30 cm, vía libre</td><td>Falso (0)</td><td>Apagadas</td><td>0 V</td></tr>
-<tr><td>2</td><td>d ≤ 30 cm, vehículo</td><td>Verdadero (1)</td><td class="on1">Encendidas 100 %</td><td>5 V</td></tr>
+<tr><td>1</td><td>d &gt; 10 cm, vía libre</td><td>Falso (0)</td><td>Apagadas</td><td>0 V</td></tr>
+<tr><td>2</td><td>d ≤ 10 cm, vehículo</td><td>Verdadero (1)</td><td class="on1">Encendidas 100 %</td><td>5 V</td></tr>
 <tr><td>3</td><td>Retraso de respuesta</td><td>N/A</td><td>Transición inmediata</td><td class="on1">&lt; 150 ms</td></tr></table>
 <div class="g c2" style="margin-top:clamp(12px,2.5vh,26px)"><div><div class="big">5 <small>V</small></div><div class="lb">alimentación del circuito</div></div><div><div class="big">≈15 <small>mA</small></div><div class="lb">consumo con sensor en espera a 40 kHz</div></div></div>
 </div></section>
 
 <section class="s" data-w="4" data-n="05.4" data-t="Metodología"><div class="in">
 <h2>Cuatro etapas, de la regla al prototipo</h2>
-<div class="fl"><div class="cd"><h3>1. Diseñar</h3><p>Farolas apagadas por defecto; encendido solo si hay objeto a ≤ 30 cm.</p></div><span class="ar">→</span><div class="cd"><h3>2. Seleccionar</h3><p>Arduino Nano, HC-SR04, resistencias y transistores que protegen los pines.</p></div><span class="ar">→</span><div class="cd"><h3>3. Armar</h3><p>Circuito en protoboard; sensor frente a la vía; cableado a las luminarias.</p></div><span class="ar">→</span><div class="cd k"><h3>4. Validar</h3><p>Código en el IDE y pruebas con vehículos a distintas distancias y velocidades.</p></div></div>
+<div class="fl"><div class="cd"><h3>1. Diseñar</h3><p>Farolas apagadas por defecto; encendido solo si hay objeto a ≤ 10 cm.</p></div><span class="ar">→</span><div class="cd"><h3>2. Seleccionar</h3><p>Arduino Nano, HC-SR04, resistencias y transistores que protegen los pines.</p></div><span class="ar">→</span><div class="cd"><h3>3. Armar</h3><p>Circuito en protoboard; sensor frente a la vía; cableado a las luminarias.</p></div><span class="ar">→</span><div class="cd k"><h3>4. Validar</h3><p>Código en el IDE y pruebas con vehículos a distintas distancias y velocidades.</p></div></div>
 </div></section>
 
 <section class="s" data-w="5" data-n="05.5" data-t="Presupuesto"><div class="in">
