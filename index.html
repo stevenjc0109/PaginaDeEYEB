@@ -76,7 +76,7 @@ th{background:var(--ink);color:#fff;font-family:'Archivo',sans-serif}
 <section class="s" data-w="0" data-n="01.1" data-t="Resumen"><div class="in">
 <h2>Una calle que se ilumina solo cuando alguien la usa</h2>
 <div class="fl"><div class="cd"><h3>Detecta</h3><p>Sensor ultrasónico HC-SR04 mide el eco</p></div><span class="ar">→</span><div class="cd"><h3>Decide</h3><p>Arduino Nano: ¿distancia ≤ 10 cm?</p></div><span class="ar">→</span><div class="cd"><h3>Conmuta</h3><p>Transistor NPN + resistor limitador</p></div><span class="ar">→</span><div class="cd k"><h3>Ilumina</h3><p>4 farolas LED de la maqueta</p></div></div>
-<div class="g c4" style="margin-top:clamp(14px,3vh,34px)"><div><div class="big">S/. 49.80</div><div class="lb">costo total estimado</div></div><div><div class="big">&lt;150 <small>ms</small></div><div class="lb">tiempo de respuesta</div></div><div><div class="big">0 <small>V</small></div><div class="lb">con la vía despejada</div></div><div><div class="big">≤ 10 <small>cm</small></div><div class="lb">umbral de detección</div></div></div>
+<div class="g c4" style="margin-top:clamp(14px,3vh,34px)"><div><div class="big">S/. 49.80</div><div class="lb">costo total estimado</div></div><div><div class="big">&lt;150 <small>ms</small></div><div class="lb">tiempo de respuesta</div></div><div><div class="big">0 <small>V</small></div><div class="lb">con la vía despejada</div></div><div><div class="big">≤10 <small>cm</small></div><div class="lb">umbral de detección</div></div></div>
 </div></section>
 
 <section class="s" data-w="0" data-n="02.1" data-t="Introducción"><div class="in">
@@ -115,7 +115,7 @@ th{background:var(--ink);color:#fff;font-family:'Archivo',sans-serif}
 <section class="s" data-w="3" data-n="05.1" data-t="Experimento"><div class="in">
 <h2>Del interruptor al sensor</h2>
 <div class="fl" style="align-items:center;margin-bottom:clamp(10px,2vh,22px)"><span class="fm">Y = A · B</span><div class="cd"><p><b>A</b> interruptor de activación (1 hay corriente)</p></div><div class="cd"><p><b>B</b> emula sensor de presencia (1 ocupado)</p></div><div class="cd"><p><b>Y</b> luminaria (1 encendida)</p></div></div>
-<div class="g c3"><div class="cd"><h3>Base</h3><p>Protoboard MB-102 y alimentación de 5 V al Arduino Nano.</p></div><div class="cd"><h3>Sensor</h3><p>HC-SR04: Trigger al pin 9, Echo al pin 10.</p></div><div class="cd"><h3>Farolas</h3><p>LEDs al pin 3.</p></div><div class="cd"><h3>Protección</h3><p>Transistor NPN con su resistencia, o resistor de 330 Ω.</p></div><div class="cd k" style="grid-column:span 2"><h3>Programación</h3><p>Código en el IDE con umbral ≤ 30 cm: al pasar un vehículo, la salida enciende las farolas.</p></div></div>
+<div class="g c3"><div class="cd"><h3>Base</h3><p>Protoboard MB-102 y alimentación de 5 V al Arduino Nano.</p></div><div class="cd"><h3>Sensor</h3><p>HC-SR04: Trigger al pin 9, Echo al pin 10.</p></div><div class="cd"><h3>Farolas</h3><p>LEDs al pin 3.</p></div><div class="cd"><h3>Protección</h3><p>Transistor NPN con su resistencia, o resistor de 330 Ω.</p></div><div class="cd k" style="grid-column:span 2"><h3>Programación</h3><p>Código en el IDE con umbral ≤ 10 cm: al pasar un vehículo, la salida enciende las farolas.</p></div></div>
 </div></section>
 
 <section class="s" data-w="3" data-n="05.2" data-t="Equipo"><div class="in">
